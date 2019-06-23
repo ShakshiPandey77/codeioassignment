@@ -9,8 +9,6 @@ import {
   NavLink,
   Container
 } from 'reactstrap';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Subject from '../subject/Subject';
 
 class AppNavbar extends React.Component{
   state={
@@ -25,7 +23,6 @@ class AppNavbar extends React.Component{
 
   render(){
     return(
-      <Router>
         <div>
           <Navbar color='dark' dark expand='sm'className="mb-5">
             <Container>
@@ -47,10 +44,6 @@ class AppNavbar extends React.Component{
             </Container>
           </Navbar>
         </div>
-        <Route path="/subject" exact component={Subject} />
-        {/* <Route path="/course" exact component={Course} />
-        <Route path="/topic" exact component={Topic} /> */}
-      </Router>
     )
   }
 }
