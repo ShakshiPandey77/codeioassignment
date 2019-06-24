@@ -1,5 +1,0 @@
-{
-"coursename":"$input.params('coursename')",
-"coursecode":$input.params('coursecode')
-
-}
