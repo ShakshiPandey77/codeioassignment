@@ -1,0 +1,6 @@
+{
+"topicname":"$input.params('topicname')",
+"topiccode":$input.params('topiccode'),
+"coursecode":$input.params('coursecode')
+
+}
