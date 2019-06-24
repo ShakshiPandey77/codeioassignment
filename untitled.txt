@@ -1,5 +1,0 @@
-https://gy0rz5s9f3.execute-api.us-east-2.amazonaws.com/live/subject
-
-https://gy0rz5s9f3.execute-api.us-east-2.amazonaws.com/live/subject/courses
-
-https://gy0rz5s9f3.execute-api.us-east-2.amazonaws.com/live/subject/courses/topic
