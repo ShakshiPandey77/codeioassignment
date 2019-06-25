@@ -6,15 +6,18 @@ import '../components.css';
 export default class SearchSubject extends React.Component{
     render(){
         return(
-            <div className="div-padding">
-            <Form>
-                <FormGroup>
-                    <InputGroup>
-                        <Input placeholder="Search by Branch Name or Branch Code" required/>
-                        <InputGroupAddon addonType="append"><Button><Search /></Button></InputGroupAddon>
-                    </InputGroup>
-                </FormGroup>
-            </Form>
+            <div className="jumbotron">
+				<div className="inner-div">
+					<h3 className="head">Search Subject</h3>
+					<Form>
+						<FormGroup>
+							<InputGroup>
+								<Input placeholder="Search by Branch Name or Branch Code" required/>
+								<InputGroupAddon addonType="append"><Button><Search /></Button></InputGroupAddon>
+							</InputGroup>
+						</FormGroup>
+					</Form>
+				</div>
             </div>
         )
     }

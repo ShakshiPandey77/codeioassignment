@@ -7,8 +7,13 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Container
+  Container,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from 'reactstrap';
+import Search from '@material-ui/icons/Search';
 
 class AppNavbar extends React.Component{
   state={
@@ -31,14 +36,16 @@ class AppNavbar extends React.Component{
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar> {/*for each nav link, add a navitem */}
                   <NavItem>
-                    <NavLink href="/subject">Subjects</NavLink>
+                    <NavLink href="/home">Home</NavLink>
                   </NavItem>
-                  <NavItem>
-                    <NavLink href="/course">Courses</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/topic">Topics</NavLink>
-                  </NavItem>
+                  <UncontrolledDropdown nav inNavbar>
+					<DropdownToggle nav caret><Search /></DropdownToggle>
+					<DropdownMenu right>
+					  <DropdownItem href="/searchsubject">By Subject</DropdownItem>
+					  <DropdownItem href="/searchcourse">By Course</DropdownItem>
+					  <DropdownItem href="/searchtopic">By Topic</DropdownItem>
+					</DropdownMenu>
+              </UncontrolledDropdown>
                 </Nav>
               </Collapse>
             </Container>
