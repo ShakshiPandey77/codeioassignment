@@ -39,10 +39,10 @@ class Subject extends React.Component{
                     </Nav>
                     <TabContent activeTab={this.state.activeTab}>
                         <TabPane tabId="1">
-                            <AddSubject />
+                            <SearchSubject />
                         </TabPane>
                         <TabPane tabId="2">
-                           <SearchSubject />
+                           <AddSubject />
                         </TabPane>
                     </TabContent>
                 </div>
