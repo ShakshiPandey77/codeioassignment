@@ -1,5 +1,5 @@
 {
 "branchname":"$input.params('branchname')",
-"branchcode":$input.params('branchcode')
+"branchcode":"$input.params('branchcode')"
 
 }
